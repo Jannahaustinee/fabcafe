@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Fabcafe PH</title>
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <style>
+        /* Reset and base styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #E6E0D4; /* Light beige color for background */
+            font-family: Arial, sans-serif;
+        }
+
+        #header {
+            width: 100%;
+            background-color: #8B5E3C; /* Dark brown header background */
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            margin-bottom: 25px;
+        }
+
+        #logo-div img {
+            max-width: 150px; /* Fixed logo size */
+            max-height: 60px;
+        }
+
+        #nav-div {
+            font-size: 18px;
+            text-align: right;
+        }
+
+        #nav-div a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white; /* White navigation text */
+            font-weight: bold;
+        }
+
+        #nav-div a:hover {
+            color: #FFD700; /* Gold hover effect */
+        }
+
+        #wrapper-div {
+            padding: 15px;
+        }
+
+        #header-banner-div {
+            font-size: 24px;
+            color: #8B5E3C; /* Dark brown text color */
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 25px;
+            font-weight: bold; /* Making text bold */
+        }
+
+        #intro-text-div {
+            font-size: 18px;
+            color: #333333;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 25px;
+            background-color: transparent; /* Removed white background */
+        }
+
+        #footer-div {
+            font-size: 16px;
+            background-color: #8B5E3C;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 25px;
+        }
+
+        /* Social Media Icons in Footer */
+        #social-icons {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        #social-icons a {
+            font-size: 30px; /* Normal icon size */
+            color: white;
+            margin: 0 15px; /* Adequate spacing between icons */
+            text-decoration: none;
+        }
+
+        #social-icons a:hover {
+            color: #FFD700; /* Gold hover effect */
+        }
+
+        /* Menu Section */
+        #menu-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .menu-item h3 {
+            font-size: 20px;
+            color: #8B5E3C;
+        }
+
+        .menu-item p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .menu-item .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #8B5E3C;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            #header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #logo-div, #nav-div {
+                width: 100%;
+                text-align: center;
+            }
+
+            #nav-div {
+                font-size: 20px;
+                margin-top: 10px;
+            }
+
+            #header-banner-div, #intro-text-div {
+                font-size: 20px;
+            }
+
+            #footer-div {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <div id="logo-div">
+            <a href="index.html"><img src="image/fablogo.jpg" alt="Fabcafe Logo"></a>
+        </div>
+        <div id="nav-div">
+            <a href="index.html">Home</a>
+            <a href="ourmenu.html" class="active">Our Menu</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="updates.html">Updates</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+    </div>
+
+    <div id="wrapper-div">
+        <div id="header-banner-div">
+            Our Menu <!-- This text is now bold -->
+        </div>
+        <div id="intro-text-div">
+            <p>Explore our delicious range of coffee, pastries, and specialty items.</p>
+        </div>
+
+        <!-- Menu Section -->
+        <div id="menu-section">
+            <div class="menu-item">
+                <img src="images/coffee1.jpg" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>A strong and bold shot of espresso.</p>
+                <p class="price">50.00</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/coffee2.jpg" alt="Latte">
+                <h3>Latte</h3>
+                <p>Smooth espresso with steamed milk and a light foam top.</p>
+                <p class="price">100.00</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/pastry1.jpg" alt="Blueberry Muffin">
+                <h3>Blueberry Muffin</h3>
+                <p>A soft and fluffy muffin with fresh blueberries.</p>
+                <p class="price">150.00</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/pastry2.jpg" alt="Croissant">
+                <h3>Classic Croissant</h3>
+                <p>Flaky and buttery, a perfect breakfast treat.</p>
+                <p class="price">90.00</p>
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+
+  <!-- Add this line in the <head> section to include Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<!-- In the footer -->
+<div id="footer-div">
+    <div id="social-icons">
+        <a href="https://www.instagram.com/fabcafeph/" target="_blank" style="color: white; text-decoration: none;">
+            <i class="fab fa-instagram"></i>
+        
+        </a>
+        <a href="https://www.facebook.com/fabcafeph/" target="_blank" style="color: white; text-decoration: none;">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="mailto:fabcafe@example.com" style="color: white; text-decoration: none;">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+    &copy; 2024 Fabcafe PH. All rights reserved.
+</div>
+
+</body>
+</html>

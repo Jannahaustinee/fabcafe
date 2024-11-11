@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updates - Fabcafe PH</title>
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+    <!-- Add Font Awesome CSS link here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Reset and base styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #E6E0D4; /* Light beige background matching index and ourmenu */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styling */
+        #header {
+            width: 100%;
+            background-color: #8B5E3C; /* Dark brown header to match index and ourmenu */
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            margin-bottom: 25px;
+        }
+
+        #logo-div img {
+            max-width: 150px;
+            max-height: 60px;
+            height: auto;
+        }
+
+        #nav-div {
+            font-size: 18px;
+            display: inline-block;
+            text-align: right;
+            width: 70%;
+        }
+
+        #nav-div a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        #nav-div a:hover {
+            color: #FFD700; /* Gold hover effect */
+        }
+
+        /* Main content wrapper */
+        #wrapper-div {
+            padding: 15px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Banner/Header text */
+        #header-banner-div {
+            font-size: 24px;
+            color: #8B5E3C; /* Dark brown text matching header */
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 25px;
+            font-weight: bold; /* Making text bold */
+        }
+
+        /* Introductory Text */
+        #intro-text-div {
+            font-size: 18px;
+            color: #333333;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 25px;
+            background-color: transparent; /* Removed white background */
+        }
+
+        /* Updates list section */
+        #updates-list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .update-item {
+            background-color: white;
+            color: #8B5E3C; /* Matching dark brown text */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .update-item h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .update-item p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Footer section */
+        #footer-div {
+            font-size: 16px;
+            background-color: #8B5E3C; /* Dark brown footer */
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 25px;
+        }
+
+        /* Social Media Icons in Footer */
+        #social-icons {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        #social-icons a {
+            font-size: 30px; /* Medium size */
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        #social-icons a:hover {
+            color: #FFD700; /* Gold hover effect */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            #header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #logo-div, #nav-div {
+                width: 100%;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            #header-banner-div, #intro-text-div {
+                font-size: 20px;
+                line-height: 80px;
+            }
+
+            #footer-div {
+                font-size: 18px;
+            }
+
+            .update-item {
+                font-size: 18px;
+                padding: 15px;
+            }
+
+            .update-item h3 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        <div id="logo-div">
+            <img src="image/fablogo.jpg" alt="Fabcafe Logo">
+        </div>
+        
+        <div id="nav-div">
+            <a href="index.html">Home</a>
+            <a href="ourmenu.html">Menu</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="updates.html" class="active">Updates</a>
+            <a href="contact-us.html">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="wrapper-div">
+        <!-- Banner/Header text -->
+        <div id="header-banner-div">
+            Latest Updates
+        </div>
+
+        <!-- Introductory Text -->
+        <div id="intro-text-div">
+            <p>Stay updated with the latest news, events, and promotions from Fabcafe!</p>
+        </div>
+
+        <!-- Updates List Section -->
+        <div id="updates-list">
+            <!-- Update 1 -->
+            <div class="update-item">
+                <h3>New Coffee Blend Launch!</h3>
+                <p>We are excited to announce our new coffee blend, "Brewed Bliss." It's a rich and aromatic coffee sourced from the finest beans, perfect for your daily cup of joy.</p>
+            </div>
+
+            <!-- Update 2 -->
+            <div class="update-item">
+                <h3>Fresh Pastries Added to Our Menu</h3>
+                <p>Our bakery team has been working hard to bring you freshly baked pastries. From flaky croissants to indulgent chocolate muffins, there's something for everyone!</p>
+            </div>
+
+            <!-- Update 3 -->
+            <div class="update-item">
+                <h3>Summer Specials Are Here!</h3>
+                <p>Beat the heat with our refreshing summer beverages! Enjoy iced lattes, smoothies, and our limited-edition summer cake that will tantalize your taste buds.</p>
+            </div>
+
+            <!-- Update 4 (Careers Message) -->
+            <div class="update-item">
+                <h3>We're Hiring! Join the Fabcafe Team</h3>
+                <p>Are you passionate about coffee and hospitality? We're looking for dynamic individuals to join our team. If you're interested in becoming part of the Fabcafe family, check out our <a href="careers.html">Careers page</a> for more details.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer-div">
+        <!-- Social Media Icons -->
+        <div id="social-icons">
+            <a href="https://www.instagram.com/fabcafeph/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/fabcafeph/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="mailto:contact@fabcafeph.com"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        &copy; 2024 FabCafe PH. All rights reserved.
+    </div>
+
+</body>
+</html>

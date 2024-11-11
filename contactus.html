@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fabcafe PH</title>
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <!-- Link to Font Awesome for social media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #E6E0D4; /* Light beige background */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styling */
+        #header {
+            width: 100%;
+            background-color: #8B5E3C; /* Dark brown header */
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            margin-bottom: 25px;
+        }
+
+        #logo-div img {
+            max-width: 150px;
+            max-height: 60px;
+            height: auto;
+        }
+
+        #nav-div {
+            font-size: 18px;
+            display: inline-block;
+            text-align: right;
+            width: 70%;
+        }
+
+        #nav-div a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        #nav-div a:hover {
+            color: #FFD700; /* Gold hover effect */
+        }
+
+        /* Main content wrapper */
+        #wrapper-div {
+            padding: 15px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Banner/Header text */
+        #header-banner-div {
+            font-size: 24px;
+            color: #8B5E3C; /* Dark brown text */
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 25px;
+            font-weight: bold; /* Making text bold */
+        }
+
+        /* Intro section styling */
+        #intro-text-div {
+            font-size: 18px;
+            color: #333333;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 25px;
+            background-color: transparent; /* Removed white background */
+        }
+
+        /* Contact form styling */
+        #contact-form {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact-form h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #8B5E3C;
+        }
+
+        #contact-form label {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        #contact-form input,
+        #contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        #contact-form button {
+            background-color: #8B5E3C;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contact-form button:hover {
+            background-color: #FFD700; /* Gold on hover */
+        }
+
+        /* Footer section */
+        #footer-div {
+            font-size: 16px;
+            background-color: #8B5E3C; /* Dark brown footer */
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 25px;
+        }
+
+        /* Social Media Icons in Footer */
+        #social-icons {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        #social-icons a {
+            font-size: 30px;
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        #social-icons a:hover {
+            color: #FFD700; /* Gold hover effect */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            #header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #logo-div, #nav-div {
+                width: 100%;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            #header-banner-div, #intro-text-div {
+                font-size: 20px;
+                line-height: 80px;
+            }
+
+            #footer-div {
+                font-size: 18px;
+            }
+
+            #contact-form {
+                width: 90%;
+                padding: 20px;
+            }
+
+            #contact-form h3 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <div id="logo-div">
+            <!-- Corrected image path to 'images/fablogo.jpg' -->
+            <a href="index.html"><img src="image/fablogo.jpg" alt="Fabcafe Logo"></a>
+        </div>
+        <div id="nav-div">
+            <a href="index.html">Home</a>
+            <a href="ourmenu.html">Our Menu</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="updates.html">Updates</a>
+            <a href="contactus.html" class="active">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="wrapper-div">
+        <div id="header-banner-div">
+            Contact Us
+        </div>
+
+        <div id="intro-text-div">
+            <p>Feel free to reach out to us for any questions, feedback, or inquiries.</p>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div id="contact-form">
+            <h3>Get in Touch</h3>
+            <form action="#" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type your message here" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer-div">
+        <div id="social-icons">
+            <a href="https://www.instagram.com/fabcafeph/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/fabcafeph/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="mailto:contact@fabcafeph.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        &copy; 2024 Fabcafe PH. All rights reserved.
+    </div>
+
+</body>
+</html>

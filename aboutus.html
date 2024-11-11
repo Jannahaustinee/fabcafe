@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Fabcafe PH</title>
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+    <!-- Add Font Awesome link for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Reset and base styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #E6E0D4; /* Light beige color for background */
+            font-family: Arial, sans-serif;
+        }
+
+        #header {
+            width: 100%;
+            background-color: #8B5E3C; /* Dark brown header background */
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            margin-bottom: 25px;
+        }
+
+        #logo-div img {
+            max-width: 150px; /* Fixed logo size */
+            max-height: 60px;
+        }
+
+        #nav-div {
+            font-size: 18px;
+            text-align: right;
+        }
+
+        #nav-div a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white; /* White navigation text */
+            font-weight: bold;
+        }
+
+        #nav-div a:hover {
+            color: #FFD700; /* Gold hover effect */
+        }
+
+        #wrapper-div {
+            padding: 15px;
+        }
+
+        #header-banner-div {
+            font-size: 24px;
+            color: #8B5E3C; /* Dark brown text color */
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 25px;
+            font-weight: bold; /* Making text bold */
+        }
+
+        #intro-text-div {
+            font-size: 18px;
+            color: #333333;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 25px;
+            background-color: transparent; /* Removed white background */
+        }
+
+        /* Footer Section */
+        #footer-div {
+            font-size: 16px;
+            background-color: #8B5E3C; /* Dark brown background for footer */
+            color: white;
+            text-align: center;
+            padding: 30px 15px; /* Increased padding for spacing */
+            margin-top: 20px;
+        }
+
+        /* Social Media Icons */
+        #footer-div .socials {
+            margin-bottom: 15px;
+        }
+
+        #footer-div .socials a {
+            font-size: 30px;
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        #footer-div .socials a:hover {
+            color: #FFD700; /* Gold hover effect */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            #header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #logo-div, #nav-div {
+                width: 100%;
+                text-align: center;
+            }
+
+            #nav-div {
+                font-size: 20px;
+                margin-top: 10px;
+            }
+
+            #header-banner-div, #intro-text-div {
+                font-size: 20px;
+            }
+
+            #footer-div {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        <div id="logo-div">
+            <a href="index.html"><img src="image/fablogo.jpg" alt="Fabcafe Logo"></a>
+        </div>
+        <div id="nav-div">
+            <a href="index.html">Home</a>
+            <a href="ourmenu.html">Our Menu</a>
+            <a href="aboutus.html" class="active">About Us</a>
+            <a href="updates.html">Updates</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="wrapper-div">
+        <div id="header-banner-div">
+            About Us
+        </div>
+        <div id="intro-text-div">
+            <p>Welcome to Fabcafe PH! We are passionate about bringing you the best coffee and pastries. Our goal is to provide a cozy space for coffee lovers and foodies to enjoy high-quality beverages and freshly baked goods, all made with the finest ingredients.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section with Social Media Icons and Copyright Text -->
+    <div id="footer-div">
+        <!-- Social Media Icons -->
+        <div class="socials">
+            <a href="https://www.instagram.com/fabcafeph/" target="_blank" title="Follow us on Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/fabcafeph/" target="_blank" title="Follow us on Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="mailto:contact@fabcafeph.com" title="Email us">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <!-- Copyright Text -->
+        <div>
+            &copy; 2024 Fabcafe PH. All rights reserved.
+        </div>
+    </div>
+
+</body>
+</html>
